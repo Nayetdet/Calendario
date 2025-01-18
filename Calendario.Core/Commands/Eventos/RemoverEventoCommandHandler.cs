@@ -15,7 +15,9 @@ public class RemoverEventoCommandHandler : IRequestHandler<RemoverEventoCommand,
 
     public async Task<bool> Handle(RemoverEventoCommand request, CancellationToken cancellationToken)
     {
-        var services = await _oAuthService.Autenticar([ $"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}" ]);
+        string[] scopes = [$"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}"];
+        var services = await _oAuthService.Autenticar(scopes, cancellationToken);
+        
         var evento = await services.Events.Delete(request.CalendarioId, request.Id).ExecuteAsync(cancellationToken);
         return evento is not null;
     }

@@ -61,7 +61,7 @@ public class EventosController : ControllerBase
     }
     
     [HttpDelete]
-    public async Task<ActionResult> Remover([FromBody] RemoverEventoCommand command, CancellationToken cancellationToken)
+    public async Task<IActionResult> Remover([FromBody] RemoverEventoCommand command, CancellationToken cancellationToken)
     {
         if (!await _mediator.Send(command, cancellationToken))
         {

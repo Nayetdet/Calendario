@@ -8,6 +8,7 @@ C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calenda
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfoInputs.cache
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfo.cs
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.csproj.CoreCompileInputs.cache
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.sourcelink.json
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendar.91159B91.Up2Date
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.dll
 C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\refint\Calendario.Core.dll

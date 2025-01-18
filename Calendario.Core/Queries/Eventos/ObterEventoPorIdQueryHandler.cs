@@ -15,9 +15,10 @@ public class ObterEventoPorIdQueryHandler : IRequestHandler<ObterEventoPorIdQuer
 
     public async Task<EventoDto?> Handle(ObterEventoPorIdQuery request, CancellationToken cancellationToken)
     {
-        var services = await _oAuthService.Autenticar([ $"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}" ]);
-        var events = await services.Events.Get(request.CalendarioId, request.Id).ExecuteAsync(cancellationToken);
+        string[] scopes = [$"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}"];
+        var services = await _oAuthService.Autenticar(scopes, cancellationToken);
         
+        var events = await services.Events.Get(request.CalendarioId, request.Id).ExecuteAsync(cancellationToken);
         if (events is null)
         {
             return null;

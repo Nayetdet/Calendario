@@ -15,7 +15,9 @@ public class AtualizarEventoCommandHandler : IRequestHandler<AtualizarEventoComm
 
     public async Task<EventoDto?> Handle(AtualizarEventoCommand request, CancellationToken cancellationToken)
     {
-        var services =  await _oAuthService.Autenticar([ $"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}" ]);
+        string[] scopes = [$"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events/{request.Id}"];
+        var services =  await _oAuthService.Autenticar(scopes, cancellationToken);
+        
         var evento = await services.Events.Update(request.ToEvent(), request.CalendarioId, request.Id).ExecuteAsync(cancellationToken);
         return EventoDto.From(evento, request.CalendarioId);
     }

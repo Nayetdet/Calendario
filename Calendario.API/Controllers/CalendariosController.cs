@@ -59,7 +59,7 @@ public class CalendariosController : ControllerBase
     }
     
     [HttpDelete("{id}")]
-    public async Task<ActionResult<bool>> Remover(string id, CancellationToken cancellationToken)
+    public async Task<IActionResult> Remover(string id, CancellationToken cancellationToken)
     {
         if (!await _mediator.Send(new RemoverCalendarioCommand { Id = id }, cancellationToken))
         {

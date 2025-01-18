@@ -15,9 +15,10 @@ public class CadastrarEventoCommandHandler : IRequestHandler<CadastrarEventoComm
 
     public async Task<EventoDto?> Handle(CadastrarEventoCommand request, CancellationToken cancellationToken)
     {
-        var services = await _oAuthService.Autenticar([ $"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events" ]);
-        var evento = await services.Events.Insert(request.ToEvent(), request.CalendarioId).ExecuteAsync(cancellationToken);
+        string[] scopes = [$"https://www.googleapis.com/calendar/v3/calendars/{request.CalendarioId}/events"];
+        var services = await _oAuthService.Autenticar(scopes, cancellationToken);
         
+        var evento = await services.Events.Insert(request.ToEvent(), request.CalendarioId).ExecuteAsync(cancellationToken);
         if (evento is null)
         {
             return null;

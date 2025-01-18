@@ -14,7 +14,7 @@ public class OAuthService : IOAuthService
         _configuration = configuration;
     }
     
-    public async Task<CalendarService> Autenticar(string[] scopes)
+    public async Task<CalendarService> Autenticar(string[] scopes, CancellationToken cancellationToken)
     {
         var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
             clientSecrets: new ClientSecrets
@@ -24,7 +24,7 @@ public class OAuthService : IOAuthService
             },
             scopes: scopes,
             user: "user",
-            taskCancellationToken: CancellationToken.None
+            taskCancellationToken: cancellationToken
         );
 
         var services = new CalendarService(new BaseClientService.Initializer
