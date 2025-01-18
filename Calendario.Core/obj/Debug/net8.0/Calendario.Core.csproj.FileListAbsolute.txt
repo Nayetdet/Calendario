@@ -1,0 +1,15 @@
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.deps.json
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.dll
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.pdb
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Shared.dll
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Shared.pdb
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.csproj.AssemblyReference.cache
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfoInputs.cache
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfo.cs
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.csproj.CoreCompileInputs.cache
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendar.91159B91.Up2Date
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.dll
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\refint\Calendario.Core.dll
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.pdb
+C:\Users\bruno\RiderProjects\Calendario\Calendario.Core\obj\Debug\net8.0\ref\Calendario.Core.dll
