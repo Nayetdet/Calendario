@@ -4,5 +4,5 @@ namespace Calendario.Core.Services;
 
 public interface IOAuthService
 {
-    Task<CalendarService> Autenticar(string[] scopes, CancellationToken cancellationToken);
+    Task<CalendarService> Autenticar(CancellationToken cancellationToken);
 }

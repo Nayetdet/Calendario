@@ -1,6 +1,9 @@
+using System.Reflection;
 using Calendario.Core;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddUserSecrets(Assembly.GetExecutingAssembly(), true, true);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

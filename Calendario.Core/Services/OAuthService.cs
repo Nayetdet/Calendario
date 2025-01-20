@@ -14,15 +14,11 @@ public class OAuthService : IOAuthService
         _configuration = configuration;
     }
     
-    public async Task<CalendarService> Autenticar(string[] scopes, CancellationToken cancellationToken)
+    public async Task<CalendarService> Autenticar(CancellationToken cancellationToken)
     {
         var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-            clientSecrets: new ClientSecrets
-            {
-                ClientId = _configuration.GetValue<string>("Google:ClientId"),
-                ClientSecret = _configuration.GetValue<string>("Google:ClientSecret")
-            },
-            scopes: scopes,
+            clientSecrets: _configuration.GetSection("Google").Get<ClientSecrets>(),
+            scopes: _configuration.GetSection("Google:Scopes").Get<IEnumerable<string>>(),
             user: "user",
             taskCancellationToken: cancellationToken
         );

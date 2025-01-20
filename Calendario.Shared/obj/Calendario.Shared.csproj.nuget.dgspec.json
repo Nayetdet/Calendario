@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj": {}
+    "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj": {
+    "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj",
         "projectName": "Calendario.Shared",
-        "projectPath": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj",
-        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Shared\\obj\\",
+        "projectPath": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Shared\\Calendario.Shared.csproj",
+        "packagesPath": "C:\\Users\\morei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\morei\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

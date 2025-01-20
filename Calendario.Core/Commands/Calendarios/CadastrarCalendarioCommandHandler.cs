@@ -15,10 +15,9 @@ public class CadastrarCalendarioCommandHandler : IRequestHandler<CadastrarCalend
 
     public async Task<CalendarioDto?> Handle(CadastrarCalendarioCommand request, CancellationToken cancellationToken)
     {
-        string[] scopes = ["https://www.googleapis.com/auth/calendar"];
-        var services = await _oAuthService.Autenticar(scopes, cancellationToken);
-        
+        var services = await _oAuthService.Autenticar(cancellationToken);
         var calendario = await services.Calendars.Insert(request.ToCalendar()).ExecuteAsync(cancellationToken);
+        
         if (calendario is null)
         {
             return null;

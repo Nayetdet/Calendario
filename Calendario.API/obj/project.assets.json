@@ -1085,19 +1085,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bruno\\.nuget\\packages\\": {}
+    "C:\\Users\\morei\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.API\\Calendario.API.csproj",
+      "projectUniqueName": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.API\\Calendario.API.csproj",
       "projectName": "Calendario.API",
-      "projectPath": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.API\\Calendario.API.csproj",
-      "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.API\\obj\\",
+      "projectPath": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.API\\Calendario.API.csproj",
+      "packagesPath": "C:\\Users\\morei\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\morei\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1109,8 +1109,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Core\\Calendario.Core.csproj": {
-              "projectPath": "C:\\Users\\bruno\\RiderProjects\\Calendario\\Calendario.Core\\Calendario.Core.csproj"
+            "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Core\\Calendario.Core.csproj": {
+              "projectPath": "C:\\Users\\morei\\RiderProjects\\Calendario\\Calendario.Core\\Calendario.Core.csproj"
             }
           }
         }
